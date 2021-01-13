@@ -1,0 +1,134 @@
+<html><head>
+
+
+<title>V Notch Weir Discharge Calculator and Equations</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="Interactive website for weir flow and water resources design calculations, software">
+<meta name="keywords" content="v notch weir, triangular, weir, water resources, fluid, flow meter, open channel, measurement, equations, design software, discharge coefficients">
+</head><body bgcolor="#ffffff">
+
+<table border="1" width="100%">
+  <tbody><tr>
+    <td style="background-color: rgb(0, 255, 255);" width="50%"><p align="center"><big><big><font face="Arial">V-Notch (Triangular) Weir Calculator</font></big></big></p></td>
+    <td style="background-color: rgb(0, 255, 0);" width="50%"><big><big><font face="Arial"></font></big></big><p align="center"><big><big><font face="Arial"></font>Discharge and Head Calculations, Equations, and Guidelines for water 
+    flow measurement in streams and channels</big></big></p></td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(255, 255, 0);" colspan="2"><p align="center"><big>To:</big><a name="top"></a><big>&nbsp; <a href="http://www.lmnoeng.com/index.shtml">LMNO Engineering home page (more 
+    calculations)</a> &nbsp;&nbsp;</big><a href="http://www.lmnoeng.com/units.htm">Unit Conversions</a><big>&nbsp;</big> 
+    &nbsp; <a href="http://www.lmnoeng.com/hydraulics.htm">Trouble printing?</a><br>
+    Weirs:&nbsp;<a href="http://www.lmnoeng.com/Weirs/RectangularWeir.htm">Rectangular</a> &nbsp;<a href="http://www.lmnoeng.com/Weirs/cipoletti.htm">Cipoletti 
+    Weir</a>&nbsp; &nbsp;<small> </small>End Depth: <a href="http://www.lmnoeng.com/Waterfall/CulvertDischarge.htm">Circular</a> &nbsp;<a href="http://www.lmnoeng.com/Waterfall/waterfall.htm">Rectangular</a><small>&nbsp; </small><a href="http://www.lmnoeng.com/Waterfall/TriangularWaterfall.htm">Triangular</a><br>
+    Flumes: <a href="http://www.lmnoeng.com/Flumes/flumes.htm">Parshall, Trapezoidal, Rectangular, and U shape</a> 
+    &nbsp; <a href="http://www.lmnoeng.com/Flumes/parshall.htm">Parshall (submerged)</a></p></td>
+  </tr>
+</tbody></table>
+
+<p align="center"><img src="vweir_files/V%2520Notch%2520Weir.GIF" alt="V Notch Weir Diagram" height="143" width="527"></p>
+
+<p align="center">
+<applet code="vweir_files/Vweir.htm" name="V Notch Weir" height="140" width="600">
+<strong>Your browser does not support Java, or Java is disabled in your browser. Calculation 
+should be here.</strong></applet>
+</p>
+
+<p>Topics:&nbsp; <a href="#intro">Introduction</a>&nbsp;&nbsp;&nbsp; <a href="#equations">Equations</a>&nbsp; 
+&nbsp; &nbsp;<a href="#guidelines">Installation Guidelines and Equation Applicability</a>&nbsp; 
+&nbsp; <a href="#messages">Error Messages</a>&nbsp;&nbsp;&nbsp; <a href="#references">References</a></p>
+
+<p><a name="intro"></a><strong>Introduction</strong><br>
+Weirs are typically installed in open channels such as streams to determine discharge 
+(flowrate).&nbsp; The basic principle is that discharge is directly related to the water 
+depth above the crotch (bottom) of the V; this distance is called head (h).&nbsp; The 
+V-notch design causes small changes in discharge to have a large change in depth allowing 
+more accurate head measurement than with a rectangular weir.</p>
+
+<p><a name="equations"></a><strong>Equations</strong><br>
+V-notch weir equations have become somewhat standardized.&nbsp; ISO (1980), ASTM (1993), 
+and USBR (1997) all suggest using the Kindsvater-Shen equation, which is presented below 
+from USBR (1997) for Q in cfs and heights in ft units.&nbsp; All of the references show 
+similar curves for C and k vs. angle, but none of them provide equations for the curves. 
+&nbsp; To produce automated calculations, LMNO Engineering used a curve fitting program to 
+obtain the equations which best fit the C and k curves.&nbsp; Our equations are shown 
+below.&nbsp; The graph shown is from our fits.&nbsp; If you compare it to the graphs shown 
+in the references, it looks nearly identical which implies that our fits are very good.</p>
+
+<p><img src="vweir_files/V%2520Notch%2520Weir%2520Equation.GIF" alt="V Notch Weir Equations" height="191" width="527"><br>
+C = 0.607165052 - 0.000874466963 Ø&nbsp; +&nbsp; 6.10393334x10<sup>-6</sup> Ø<sup>2</sup><br>
+k (ft.) = 0.0144902648 - 0.00033955535 Ø&nbsp; + 3.29819003x10<sup>-6</sup> Ø<sup>2</sup>&nbsp; 
+- 1.06215442x10<sup>-8</sup> Ø<sup>3</sup><br>
+where Ø is the notch angle in degrees</p>
+
+<p><a name="guidelines"></a><strong>Installation Guidelines and Equation Applicability 
+&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="#top">Top of Page</a><br>
+USBR (1997) suggests using the V-notch weir equations for the following conditions:</p>
+
+<p>Head (h) should be measured at a distance of at least 4h upstream of the weir.</p>
+
+<p>It doesn't matter how thick the weir is except where water flows over the weir through 
+the "V."&nbsp; The weir should be between 0.03 and 0.08 inches (0.8 to 2 mm) 
+thick in the V.&nbsp; If the bulk of the weir is thicker than 0.08 inch, the downstream 
+edge of the V can be chamfered at an angle greater than 45<sup>o</sup> (60<sup>o</sup> is 
+recommended) to achieve the desired thickness of the edges.&nbsp; You want to avoid having 
+water cling to the downstream face of the weir.</p>
+
+<p>Water surface downstream of the weir should be at least 0.2 ft. (6 cm) below the bottom 
+of the V to allow a free flowing waterfall.</p>
+
+<p>Measured head (h) should be greater than 0.2 ft. (6 cm) due to potential measurement 
+error at such small heads and the fact that the nappe (waterfall) may cling to the weir.</p>
+
+<p>The equations have been developed for h&lt;1.25 ft. (38 cm) and h/P&lt;2.4..</p>
+
+<p>The equations have been developed for fully contracted V-notch weirs which means h/B 
+should be &lt;= 0.2.</p>
+
+<p>The average width of the approach channel (B) should be &gt; 3 ft. (91 cm).</p>
+
+<p>The bottom of the "V" should be at least 1.5 ft. (45 cm) above the bottom of 
+the upstream channel.</p>
+
+<p>If your weir does not achieve some of the above criteria, you may have a 
+"partially contracted V-notch weir" where h/B needs only to be &lt;= 0.4, the 
+bottom of the "V" only needs to be 4 inch (10 cm) above the bottom of the 
+upstream channel, the approach channel only needs to be 2 ft. (61 cm) wide, and h can be 
+up to 2 ft. (61 cm) instead of 1.25 ft. (38 cm).&nbsp; Partially contracted weirs use a 
+different graph for C which is a function of h/P and P/B and is only valid for a notch 
+angle of 90<sup>o</sup>.&nbsp; In the graph (not shown - see USBR, 1997), C varies from 
+0.576 to 0.6; whereas, for a fully contracted 90<sup>o</sup> notch, C is 0.578 from our 
+graph shown above.&nbsp; Our calculation does not account for partially contracted weirs, 
+but for most practical purposes the difference in C is inconsequential.</p>
+
+<p><a name="messages"></a><strong>Error Messages given by calculation 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#top">Top of Page</a><strong><br>
+</strong><em>"All inputs must be positive".</em>&nbsp; This is an initial check 
+of user input.<br>
+<em>"Angle out of range".</em>&nbsp; The notch angle must be between 20<sup>o</sup> 
+and 100<sup>o</sup> (0.35 and 1.75 radians) for the equations to be valid.<br>
+<em>"Infeasible input".</em>&nbsp; Input results in a negative head due to the 
+compiler's machine precision.&nbsp; Occurs if head is being computed and a very low Q is 
+entered (e.g. 1.0e-20).</p>
+
+<p><a name="references"></a><strong>References</strong><br>
+ASTM (1993).&nbsp; American Society for Testing and Materials.&nbsp; ASTM D5242. &nbsp; 
+Standard method for open-channel flow measurement of water with thin-plate weirs. &nbsp; 
+1993.&nbsp; Available from Global Engineering Documents at <a href="http://global.ihs.com/">http://global.ihs.com</a></p>
+
+<p>ISO (1980).&nbsp; International Organization of Standards.&nbsp; ISO 1438/1-1980(E). 
+&nbsp; Water flow measurement in open channels using weirs and venturi flumes - Part 1: 
+Thin plate weirs.&nbsp; 1980.&nbsp; Available from Global Engineering Documents at <a href="http://global.ihs.com/">http://global.ihs.com</a></p>
+
+<p>USBR (1997).&nbsp; U.S. Department of the Interior, Bureau of Reclamation.&nbsp; Water 
+Measurement Manual.&nbsp; 1997.&nbsp; 3ed.&nbsp; Available from <a href="http://www.usbr.gov/pmts/hydraulics_lab/pubs/wmm/index.htm">http://www.usbr.gov/pmts/hydraulics_lab/pubs/wmm/index.htm</a> 
+.</p>
+
+<p align="center"><font face="Arial"><strong>© 1999-2007 LMNO Engineering, Research, and 
+Software, Ltd.&nbsp; All rights reserved.</strong><br>
+</font><strong><br>
+LMNO Engineering, Research, and Software, Ltd.</strong><br>
+7860 Angel Ridge Rd.&nbsp;&nbsp; Athens, Ohio&nbsp;45701&nbsp; USA&nbsp;&nbsp; Phone and 
+fax: (740) 592-1890<br>
+<a href="mailto:LMNO@LMNOeng.com">LMNO@LMNOeng.com</a>&nbsp;&nbsp;&nbsp; <a href="http://www.lmnoeng.com/">http://www.LMNOeng.com</a></p>
+</body></html>
